@@ -5,12 +5,13 @@ x = random.randrange(7576467576,9999999999999999)
 print(x)
 
 
-#Part B
+
 
 import turtle  # 1. import modules
 import random
 
 screen = turtle.Screen()
+
 #create and name turtles 
 tolga = turtle.Turtle()
 aral = turtle.Turtle()
@@ -26,11 +27,14 @@ aral.up()
 tolga.goto(-100,-20)
 aral.goto(-100,20)
 #Who gonna win
-myRange = (90,200,120,100,50,20,10,70,67,32,87,45,97,148,216)
-aral.forward(random.choice(myRange))
-tolga.forward(random.choice(myRange))
+
+myRange = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,30,40,50)
+for myrange in range(10):
+    tolga.forward(random.choice(myRange))
+    aral.forward(random.choice(myRange))
 
 
 screen.exitonclick()
+
 
 
