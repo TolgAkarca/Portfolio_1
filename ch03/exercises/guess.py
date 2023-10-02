@@ -12,6 +12,9 @@ for _ in range(userchance):
     if userguess > 10 :
         print("Wrong Input")
 
+    if userguess == randomnumber :
+        break
+
 
     else :
 
