@@ -3,18 +3,33 @@ randomnumber = int(random.randrange(1,11))
 
 print("Lets play a game !! ")
 print("We gonna play NUMBER GUESS !!")
-userguess = int(input("Please enter a number between 1 and 10 \n"))
+print("Don't forget you have 3 CHANCES!!")
 
-if userguess > 10 :
-    print("Wrong Input")
+userchance = 3
 
-else :
-    if userguess == randomnumber :
-        print ("Good Job!!")
+for _ in range(userchance):
+    userguess = int(input("Please enter a number between 1 and 10 \n"))
+    if userguess > 10 :
+        print("Wrong Input")
 
-    if userguess > randomnumber :
-         print ("Too high")
-        
-    if userguess < randomnumber : 
-        print ("Too Low")
+
+    else :
+
+        if userguess == randomnumber :
+            print ("Good Job!!")
+
+        if userguess > randomnumber :
+            
+            userchance -= 1
+            print (f"Too high!! , you have {userchance} chances(s) more")
+                
+        if userguess < randomnumber : 
+            
+            userchance -= 1
+            print (f"Too low !! , you have {userchance} chance(s) more")
+
+        if userchance == 0 :
+             print ("Out of chances sorry !!")
+             break 
+
 
