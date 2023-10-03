@@ -13,13 +13,11 @@ for _ in range(userchance):
         print("Wrong Input")
 
     if userguess == randomnumber :
+        print ("Good Job!!")
         break
 
 
     else :
-
-        if userguess == randomnumber :
-            print ("Good Job!!")
 
         if userguess > randomnumber :
             
