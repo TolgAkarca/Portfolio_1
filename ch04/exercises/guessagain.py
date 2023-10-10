@@ -4,7 +4,6 @@ randomnumber = int(random.randrange(1,1001))
 print("Lets play a game !! ")
 print("We gonna play NUMBER GUESS !!")
 print("Number gonna between 1 and 1000 (inclusive)")
-print(randomnumber)
 
 usertries = 0 
 
