@@ -22,6 +22,7 @@ running = True
 
 iteration1 = 0
 iteration2 = 0
+raund = 0 
 
 
 while True:
@@ -92,6 +93,7 @@ while True:
                 
 
                 pygame.draw.circle(screen , 'red' , (x1 ,y1) , 10)
+                raund += 1
 
                 if is_in_circle1  :
                     color = 'red'
@@ -138,33 +140,26 @@ while True:
                 
 
                 
-                screen.blit(message2 , (270,300))
+                screen.blit(message2 , (250,300))
                 iteration2+=1
+
+           
+         
+            if raund == 10 :
+                if len(player1points) > len(player2points) :
+                    message3 = player1win
+                    color = 'black'
+                    screen.blit(message3 ,(0,100)) 
+
+                elif len(player2points) > len(player1points) :
+                    message4 = player2win
+                    color = 'black'
+                    screen.blit(message4 ,(0,100)) 
 
             pygame.display.flip()
             pygame.time.wait(500)
-            break
 
-    
-        
-        while True:
-         pygame.init()
-         screen = pygame.display.set_mode((500,500))
-         window = screen.get_rect()
-        
-         pygame.draw.rect(screen, 'white ', (200, 200, 200, 200))
-         pygame.display.flip()
-         if len(player1points) > len(player2points) :
-            message3 = player1win
-            color = 'black'
-
-         elif len(player2points) > len(player1points) :
-            message4 = player2win
-            color = 'black'
-
-         pygame.display.flip()
-         pygame.time.wait(500)
-
+            
          
 
 
