@@ -52,4 +52,8 @@ circle2()
 x, y = star()
 print(f"The pen is at coordinates ({x}, {y}) after drawing the star.")
 print('Flag is completed !!!')
+
+
+
 screen.exitonclick()
+

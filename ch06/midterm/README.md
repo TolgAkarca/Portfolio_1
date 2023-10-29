@@ -7,7 +7,7 @@ My project is : My country's flag. I drew this flag because Turkey will be 100 y
 I don't thing there is a bug. Also it don't have any incomplate parts
 
 
-I only use in-class materials 
+I only used in-class material 
 
 
 
