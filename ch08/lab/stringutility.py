@@ -15,7 +15,10 @@ class StringUtility:
         return self.string[:2] + self.string[-2:]
 
     def fixStart(self):
-        return self.string[0] + self.string[1:].replace(self.string[0], '*')
+        if len(self.string) <= 2:
+            return ''
+        else:
+         return self.string[0] + self.string[1:].replace(self.string[0], '*')
 
     def asciiSum(self):
         return sum(ord(char) for char in self.string)
@@ -25,7 +28,7 @@ class StringUtility:
         result = ''
         for char in self.string:
             if char.isalpha():
-                shifted_char = chr((ord(char) - ord('a') + shift) % 26 + ord('a'))
+                shifted_char = chr((ord(char.lower()) - ord('a') + shift) % 26 + ord('a'))
                 result += shifted_char.upper() if char.isupper() else shifted_char
             else:
                 result += char
