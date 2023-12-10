@@ -1,9 +1,9 @@
 # CS110 Final Exam
 
-## SHORT DESCRIPTION *(1 or 2 sentences describing your program)*
+## The first one presents us the important dates of 2022 and the second one presents us the top 20 news.
 
-## KNOWN BUGS AND INCOMPLETE PARTS *(list any known bugs or non-working parts)*
+## None
 
-## REFERENCES *(any resources you use outside of class materials)*
+##  Class resources + https://github.com/toddmotto/public-apis
 
-## MISCELLANEOUS COMMENTS *(anything else you would like the grader to know)*
+## None
