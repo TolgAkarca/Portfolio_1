@@ -2,5 +2,4 @@
 # CS110: Introduction to Programming Portfolio
 
 - Preferred Name: Tolga
-- Discord Username:Memphi$#6429
 - Github Username:TolgAkarca
